@@ -26,7 +26,7 @@ namespace ConsoleApp1
             int time = 5;
             for (int i = 0; i < start.Length; i++)
             {
-                string arguments = $"ffmpeg -ss {start[i]} -i C:\\Users\\Dogukan\\Desktop\\a.mp4 -t {time} -c copy output\\{i}.mp4";
+                string arguments = $"ffmpeg -ss {start[i]} -i a.mp4 -t {time} -c copy output\\{i}.mp4";
                 exec(arguments);
             }
         }
